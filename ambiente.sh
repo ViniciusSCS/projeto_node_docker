@@ -1,6 +1,6 @@
 #!/bin/bash
 
-repository_listagem="git@github.com:ViniciusSCS/listagem_microsservice_node.git"
+repository_listagem="https://github.com/ViniciusSCS/listagem_microsservice_node.git"
 
 localFolder="services"
 
