@@ -9,7 +9,7 @@ services:
         DK_GID: 1000
     container_name: "padrao-listagem"
     ports:
-      - "8020:8020"
+      - "3333:3333"
     volumes:
       - "${PWD}/services/listagem:/home/node/project"
     environment:
