@@ -1,0 +1,22 @@
+version: '3.9'
+
+services:
+  listagem:
+    build:
+      context: ./services/listagem
+      args:
+        DK_UID: 1000
+        DK_GID: 1000
+    container_name: "padrao-listagem"
+    ports:
+      - "8020:8020"
+    volumes:
+      - "${PWD}/services/listagem:/home/node/project"
+    environment:
+      NODE_ENV : "development"
+    networks:
+      - backend
+    command: ["npm", "run", "dev"]
+
+networks:
+  backend:
